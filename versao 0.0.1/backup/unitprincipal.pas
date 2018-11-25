@@ -5,8 +5,8 @@ unit unitprincipal;
 interface
 
 uses
-  Classes, SysUtils, FileUtil, Forms, Controls, Graphics, Dialogs, StdCtrls,
-  ExtCtrls;
+  Classes, SysUtils, FileUtil, SynHighlighterCss, Forms, Controls,
+  Graphics, Dialogs, StdCtrls, ExtCtrls;
 
 type
 
