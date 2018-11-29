@@ -1,0 +1,92 @@
+object FormInicial: TFormInicial
+  Left = 0
+  Height = 1080
+  Top = 0
+  Width = 1920
+  BorderIcons = [biSystemMenu, biMinimize]
+  Caption = 'Confident - Início'
+  ClientHeight = 1080
+  ClientWidth = 1920
+  Color = clFuchsia
+  Menu = MainMenuPrincipal
+  OnCreate = FormCreate
+  Visible = False
+  WindowState = wsMaximized
+  object LabelTitulo: TLabel
+    Left = 504
+    Height = 120
+    Top = 272
+    Width = 354
+    Align = alCustom
+    Alignment = taCenter
+    Caption = ' Confident  '
+    Font.Height = -85
+    Font.Name = 'Mr Dafoe'
+    ParentColor = False
+    ParentFont = False
+  end
+  object MainMenuPrincipal: TMainMenu
+    left = 30
+    top = 43
+    object MenuItemCadastro: TMenuItem
+      Caption = '&Cadastro'
+      object MenuItemModerador: TMenuItem
+        Caption = '&Moderador'
+      end
+      object MenuItem1: TMenuItem
+        Caption = '-'
+      end
+      object MenuItemUsuario: TMenuItem
+        Caption = '&Usuário'
+      end
+      object MenuItem2: TMenuItem
+        Caption = '-'
+      end
+      object MenuItemNovoTipo: TMenuItem
+        Caption = '&Novo tipo'
+      end
+      object MenuItem3: TMenuItem
+        Caption = '-'
+      end
+      object MenuItemEscola: TMenuItem
+        Caption = '&Escola'
+      end
+    end
+    object MenuItemNotificacao: TMenuItem
+      Caption = '&Notificações'
+      object MenuItemDenuncia: TMenuItem
+        Caption = '&Denúncia Nova'
+      end
+      object MenuItem4: TMenuItem
+        Caption = '-'
+      end
+      object MenuItemProblemas: TMenuItem
+        Caption = '&Problemas'
+      end
+      object MenuItem5: TMenuItem
+        Caption = '-'
+      end
+      object MenuItemMensagem: TMenuItem
+        Caption = '&Mensagem'
+      end
+      object MenuItem6: TMenuItem
+        Caption = '-'
+      end
+      object MenuItemPEdido: TMenuItem
+        Caption = 'Pedido de &Atualização'
+      end
+    end
+    object MenuItemAnalise: TMenuItem
+      Caption = '&Análise de Dados'
+    end
+    object MenuItemTabelas: TMenuItem
+      Caption = '&Tabelas'
+    end
+    object MenuItemAcompanharDenuncia: TMenuItem
+      Caption = 'Acompanhar &Denúncias'
+    end
+    object MenuItemSobre: TMenuItem
+      Caption = '&Sobre'
+    end
+  end
+end

@@ -6,7 +6,7 @@ interface
 
 uses
   Classes, SysUtils, FileUtil, SynHighlighterCss, Forms, Controls,
-  Graphics, Dialogs, StdCtrls, ExtCtrls;
+  Graphics, Dialogs, StdCtrls, ExtCtrls, Menus;
 
 type
 
@@ -19,7 +19,7 @@ type
     GroupBoxSenha: TGroupBox;
     GroupBoxUsuario: TGroupBox;
     GroupBoxLogin: TGroupBox;
-    Label1: TLabel;
+    LabelSobreTitulo: TLabel;
     LabelSuporteTecnico: TLabel;
     LabelResetarSenha: TLabel;
     LabelTitulo: TLabel;

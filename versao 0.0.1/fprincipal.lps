@@ -3,13 +3,13 @@
   <ProjectSession>
     <Version Value="10"/>
     <BuildModes Active="Default"/>
-    <Units Count="2">
+    <Units Count="3">
       <Unit0>
         <Filename Value="fprincipal.lpr"/>
         <IsPartOfProject Value="True"/>
         <EditorIndex Value="-1"/>
         <CursorPos X="38" Y="10"/>
-        <UsageCount Value="46"/>
+        <UsageCount Value="47"/>
       </Unit0>
       <Unit1>
         <Filename Value="unitprincipal.pas"/>
@@ -17,21 +17,140 @@
         <ComponentName Value="formLogin"/>
         <HasResources Value="True"/>
         <ResourceBaseClass Value="Form"/>
-        <IsVisibleTab Value="True"/>
         <CursorPos X="50" Y="8"/>
-        <UsageCount Value="46"/>
+        <UsageCount Value="47"/>
         <Loaded Value="True"/>
         <LoadedDesigner Value="True"/>
       </Unit1>
+      <Unit2>
+        <Filename Value="unitinicio.pas"/>
+        <IsPartOfProject Value="True"/>
+        <ComponentName Value="FormInicial"/>
+        <ResourceBaseClass Value="Form"/>
+        <IsVisibleTab Value="True"/>
+        <EditorIndex Value="1"/>
+        <TopLine Value="40"/>
+        <CursorPos X="3" Y="56"/>
+        <UsageCount Value="21"/>
+        <Loaded Value="True"/>
+        <LoadedDesigner Value="True"/>
+      </Unit2>
     </Units>
-    <JumpHistory Count="2" HistoryIndex="1">
+    <JumpHistory Count="29" HistoryIndex="28">
       <Position1>
         <Filename Value="unitprincipal.pas"/>
       </Position1>
       <Position2>
         <Filename Value="unitprincipal.pas"/>
-        <Caret Line="8" Column="50" TopLine="21"/>
+        <Caret Line="8" Column="50"/>
       </Position2>
+      <Position3>
+        <Filename Value="unitinicio.pas"/>
+      </Position3>
+      <Position4>
+        <Filename Value="unitinicio.pas"/>
+        <Caret Line="38" Column="3" TopLine="22"/>
+      </Position4>
+      <Position5>
+        <Filename Value="unitinicio.pas"/>
+        <Caret Line="39" Column="3" TopLine="23"/>
+      </Position5>
+      <Position6>
+        <Filename Value="unitinicio.pas"/>
+        <Caret Line="40" Column="3" TopLine="24"/>
+      </Position6>
+      <Position7>
+        <Filename Value="unitinicio.pas"/>
+        <Caret Line="41" Column="3" TopLine="25"/>
+      </Position7>
+      <Position8>
+        <Filename Value="unitinicio.pas"/>
+        <Caret Line="42" Column="3" TopLine="26"/>
+      </Position8>
+      <Position9>
+        <Filename Value="unitinicio.pas"/>
+        <Caret Line="43" Column="3" TopLine="27"/>
+      </Position9>
+      <Position10>
+        <Filename Value="unitinicio.pas"/>
+        <Caret Line="44" Column="3" TopLine="28"/>
+      </Position10>
+      <Position11>
+        <Filename Value="unitinicio.pas"/>
+        <Caret Line="45" Column="3" TopLine="29"/>
+      </Position11>
+      <Position12>
+        <Filename Value="unitprincipal.pas"/>
+        <Caret Line="8" Column="50"/>
+      </Position12>
+      <Position13>
+        <Filename Value="unitinicio.pas"/>
+        <Caret Line="46" Column="3" TopLine="30"/>
+      </Position13>
+      <Position14>
+        <Filename Value="unitinicio.pas"/>
+        <Caret Line="47" Column="3" TopLine="31"/>
+      </Position14>
+      <Position15>
+        <Filename Value="unitinicio.pas"/>
+        <Caret Line="48" Column="3" TopLine="32"/>
+      </Position15>
+      <Position16>
+        <Filename Value="unitinicio.pas"/>
+        <Caret Line="49" Column="3" TopLine="33"/>
+      </Position16>
+      <Position17>
+        <Filename Value="unitinicio.pas"/>
+        <Caret Line="50" Column="3" TopLine="34"/>
+      </Position17>
+      <Position18>
+        <Filename Value="unitinicio.pas"/>
+        <Caret Line="49" Column="3" TopLine="33"/>
+      </Position18>
+      <Position19>
+        <Filename Value="unitinicio.pas"/>
+        <Caret Line="48" Column="3" TopLine="32"/>
+      </Position19>
+      <Position20>
+        <Filename Value="unitinicio.pas"/>
+        <Caret Line="47" Column="3" TopLine="31"/>
+      </Position20>
+      <Position21>
+        <Filename Value="unitinicio.pas"/>
+        <Caret Line="48" Column="3" TopLine="32"/>
+      </Position21>
+      <Position22>
+        <Filename Value="unitinicio.pas"/>
+        <Caret Line="49" Column="3" TopLine="33"/>
+      </Position22>
+      <Position23>
+        <Filename Value="unitinicio.pas"/>
+        <Caret Line="50" Column="3" TopLine="34"/>
+      </Position23>
+      <Position24>
+        <Filename Value="unitinicio.pas"/>
+        <Caret Line="51" Column="3" TopLine="35"/>
+      </Position24>
+      <Position25>
+        <Filename Value="unitinicio.pas"/>
+        <Caret Line="52" Column="3" TopLine="36"/>
+      </Position25>
+      <Position26>
+        <Filename Value="unitinicio.pas"/>
+        <Caret Line="51" Column="3" TopLine="35"/>
+      </Position26>
+      <Position27>
+        <Filename Value="unitinicio.pas"/>
+        <Caret Line="52" Column="3" TopLine="36"/>
+      </Position27>
+      <Position28>
+        <Filename Value="unitinicio.pas"/>
+        <Caret Line="53" Column="3" TopLine="37"/>
+      </Position28>
+      <Position29>
+        <Filename Value="unitinicio.pas"/>
+        <Caret Line="54" Column="3" TopLine="38"/>
+      </Position29>
     </JumpHistory>
   </ProjectSession>
 </CONFIG>

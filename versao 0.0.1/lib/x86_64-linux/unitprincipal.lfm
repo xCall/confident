@@ -1973,7 +1973,7 @@ object formLogin: TformLogin
       ParentColor = False
     end
   end
-  object Label1: TLabel
+  object LabelSobreTitulo: TLabel
     Left = 312
     Height = 15
     Top = 112

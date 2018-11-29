@@ -32,7 +32,7 @@
         <PackageName Value="LCL"/>
       </Item3>
     </RequiredPackages>
-    <Units Count="2">
+    <Units Count="3">
       <Unit0>
         <Filename Value="fprincipal.lpr"/>
         <IsPartOfProject Value="True"/>
@@ -44,6 +44,12 @@
         <HasResources Value="True"/>
         <ResourceBaseClass Value="Form"/>
       </Unit1>
+      <Unit2>
+        <Filename Value="unitinicio.pas"/>
+        <IsPartOfProject Value="True"/>
+        <ComponentName Value="FormInicial"/>
+        <ResourceBaseClass Value="Form"/>
+      </Unit2>
     </Units>
   </ProjectOptions>
   <CompilerOptions>
