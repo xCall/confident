@@ -78,6 +78,27 @@ object FormInicial: TFormInicial
     end
     object MenuItemAnalise: TMenuItem
       Caption = '&Análise de Dados'
+      object MenuItemImprimir: TMenuItem
+        Caption = 'Imprimir &Relatório'
+      end
+      object MenuItem8: TMenuItem
+        Caption = '-'
+      end
+      object MenuItemDadosUser: TMenuItem
+        Caption = '&Imprimir Dados de Usuário'
+      end
+      object MenuItem10: TMenuItem
+        Caption = '-'
+      end
+      object MenuItemGrafico: TMenuItem
+        Caption = '&Gráfico de Uso'
+      end
+      object MenuItem12: TMenuItem
+        Caption = '-'
+      end
+      object MenuItemMovimentacao: TMenuItem
+        Caption = '&Movimentação'
+      end
     end
     object MenuItemTabelas: TMenuItem
       Caption = '&Tabelas'

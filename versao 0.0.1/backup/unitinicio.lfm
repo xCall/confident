@@ -13,7 +13,7 @@ object FormInicial: TFormInicial
   Visible = False
   WindowState = wsMaximized
   object LabelTitulo: TLabel
-    Left = 472
+    Left = 504
     Height = 120
     Top = 272
     Width = 354
@@ -78,9 +78,69 @@ object FormInicial: TFormInicial
     end
     object MenuItemAnalise: TMenuItem
       Caption = '&Análise de Dados'
+      object MenuItemImprimir: TMenuItem
+        Caption = 'Imprimir &Relatório'
+      end
+      object MenuItem8: TMenuItem
+        Caption = '-'
+      end
+      object MenuItemDadosUser: TMenuItem
+        Caption = '&Imprimir Dados de Usuário'
+      end
+      object MenuItem10: TMenuItem
+        Caption = '-'
+      end
+      object MenuItemGrafico: TMenuItem
+        Caption = '&Gráfico de Uso'
+      end
+      object MenuItem12: TMenuItem
+        Caption = '-'
+      end
+      object MenuItemMovimentacao: TMenuItem
+        Caption = '&Movimentação'
+      end
     end
     object MenuItemTabelas: TMenuItem
       Caption = '&Tabelas'
+      object MenuItemTDUsuario: TMenuItem
+        Caption = 'Tabelas Dados &Usuário'
+      end
+      object MenuItem9: TMenuItem
+        Caption = '-'
+      end
+      object MenuItemTDEscola: TMenuItem
+        Caption = 'Tabela Dados &Escola'
+      end
+      object MenuItem13: TMenuItem
+        Caption = '-'
+      end
+      object MenuItemTDDenuncia: TMenuItem
+        Caption = 'Tabela Dados Denúncias'
+      end
+      object MenuItem15: TMenuItem
+        Caption = '-'
+      end
+      object MenuItemTDModeradores: TMenuItem
+        Caption = 'Tabela Dados &Moderadores'
+      end
+      object MenuItem17: TMenuItem
+        Caption = '-'
+      end
+      object MenuItemTTiposD: TMenuItem
+        Caption = 'Tabela De &Tipos de Denúncia'
+      end
+      object MenuItem14: TMenuItem
+        Caption = '-'
+      end
+      object MenuItemTGraficos: TMenuItem
+        Caption = 'Tabela de &Gráficos'
+      end
+      object MenuItem18: TMenuItem
+        Caption = '-'
+      end
+      object MenuItemLogAt: TMenuItem
+        Caption = '&Log de Atualizações'
+      end
     end
     object MenuItemAcompanharDenuncia: TMenuItem
       Caption = 'Acompanhar &Denúncias'

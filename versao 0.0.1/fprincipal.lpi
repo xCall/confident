@@ -48,6 +48,7 @@
         <Filename Value="unitinicio.pas"/>
         <IsPartOfProject Value="True"/>
         <ComponentName Value="FormInicial"/>
+        <HasResources Value="True"/>
         <ResourceBaseClass Value="Form"/>
       </Unit2>
     </Units>
