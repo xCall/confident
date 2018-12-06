@@ -1,0 +1,10 @@
+object FormNotPedido: TFormNotPedido
+  Left = 0
+  Height = 240
+  Top = 0
+  Width = 320
+  Caption = 'Pedido de Melhorias'
+  ClientHeight = 240
+  ClientWidth = 320
+  Visible = False
+end

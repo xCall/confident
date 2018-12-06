@@ -1,0 +1,19 @@
+object FormCadNovoTipo: TFormCadNovoTipo
+  Left = 0
+  Height = 365
+  Top = 0
+  Width = 805
+  Caption = 'Cadastrar Novo Tipo de Denúncia'
+  ClientHeight = 365
+  ClientWidth = 805
+  Color = clFuchsia
+  Visible = False
+  object DBGroupBoxTpDenuncia: TDBGroupBox
+    Left = 24
+    Height = 323
+    Top = 16
+    Width = 752
+    Caption = 'Cadastrar Tipo de Denúncia'
+    TabOrder = 0
+  end
+end

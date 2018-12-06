@@ -17,6 +17,12 @@ type
     MainMenuPrincipal: TMainMenu;
     MenuItem1: TMenuItem;
     MenuItem10: TMenuItem;
+    MenuItemConfiguracao: TMenuItem;
+    MenuItemEncerraD: TMenuItem;
+    MenuItem16: TMenuItem;
+    MenuItem19: TMenuItem;
+    MenuItem20: TMenuItem;
+    MenuItemAndamento: TMenuItem;
     MenuItemTGraficos: TMenuItem;
     MenuItem14: TMenuItem;
     MenuItemLogAt: TMenuItem;
@@ -44,7 +50,7 @@ type
     MenuItemDenuncia: TMenuItem;
     MenuItemProblemas: TMenuItem;
     MenuItemMensagem: TMenuItem;
-    MenuItemPEdido: TMenuItem;
+    MenuItemPedido: TMenuItem;
     MenuItemModerador: TMenuItem;
     MenuItemUsuario: TMenuItem;
     MenuItemNovoTipo: TMenuItem;
@@ -56,6 +62,14 @@ type
     MenuItemAnalise: TMenuItem;
     MenuItemTabelas: TMenuItem;
     procedure FormCreate(Sender: TObject);
+    procedure MenuItemDenunciaClick(Sender: TObject);
+    procedure MenuItemEscolaClick(Sender: TObject);
+    procedure MenuItemMensagemClick(Sender: TObject);
+    procedure MenuItemModeradorClick(Sender: TObject);
+    procedure MenuItemNovoTipoClick(Sender: TObject);
+    procedure MenuItemPedidoClick(Sender: TObject);
+    procedure MenuItemProblemasClick(Sender: TObject);
+    procedure MenuItemUsuarioClick(Sender: TObject);
   private
 
   public
@@ -67,6 +81,10 @@ var
 
 implementation
 
+uses unitcadmoderador, unitcadusuario, unitcadescola,
+  unitcadtpdenuncia, unitnotdenuncia, unitnotproblemas, unitnotmsg,
+  unitnotpedido;
+
 {$R *.lfm}
 
 { TFormInicial }
@@ -76,5 +94,45 @@ begin
 
 end;
 
-end.
+procedure TFormInicial.MenuItemDenunciaClick(Sender: TObject);
+begin
+  FormNotDenucia.ShowModal;
 
+end;
+
+procedure TFormInicial.MenuItemEscolaClick(Sender: TObject);
+begin
+  FormCadEscola.ShowModal;
+end;
+
+procedure TFormInicial.MenuItemMensagemClick(Sender: TObject);
+begin
+  FormNotMsg.ShowModal;
+end;
+
+procedure TFormInicial.MenuItemModeradorClick(Sender: TObject);
+begin
+  FormCadModerador.ShowModal;
+end;
+
+procedure TFormInicial.MenuItemNovoTipoClick(Sender: TObject);
+begin
+  FormCadNovoTipo.ShowModal;
+end;
+
+procedure TFormInicial.MenuItemPedidoClick(Sender: TObject);
+begin
+  FormNot
+end;
+
+procedure TFormInicial.MenuItemProblemasClick(Sender: TObject);
+begin
+  FormNotProblemas.ShowModal;
+end;
+
+procedure TFormInicial.MenuItemUsuarioClick(Sender: TObject);
+begin
+  FormCadUsuario.ShowModal;
+end;
+
+end.

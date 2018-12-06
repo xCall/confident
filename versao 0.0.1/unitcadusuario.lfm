@@ -1,0 +1,19 @@
+object FormCadUsuario: TFormCadUsuario
+  Left = 0
+  Height = 377
+  Top = 0
+  Width = 800
+  Caption = 'Cadastrar Usuário'
+  ClientHeight = 377
+  ClientWidth = 800
+  Color = clFuchsia
+  Visible = False
+  object DBGroupBox: TDBGroupBox
+    Left = 24
+    Height = 325
+    Top = 27
+    Width = 745
+    Caption = 'Cadastrar Usuário'
+    TabOrder = 0
+  end
+end

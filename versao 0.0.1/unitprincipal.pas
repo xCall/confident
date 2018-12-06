@@ -6,7 +6,7 @@ interface
 
 uses
   Classes, SysUtils, FileUtil, SynHighlighterCss, Forms, Controls,
-  Graphics, Dialogs, StdCtrls, ExtCtrls, Menus;
+  Graphics, Dialogs, StdCtrls, ExtCtrls, Menus, DbCtrls, LazHelpHTML;
 
 type
 
@@ -14,8 +14,8 @@ type
 
   TformLogin = class(TForm)
     ButtonEntrar: TButton;
-    EditSenha: TEdit;
-    EditUsuario: TEdit;
+    DBEditLogin: TDBEdit;
+    DBEditSenha: TDBEdit;
     GroupBoxSenha: TGroupBox;
     GroupBoxUsuario: TGroupBox;
     GroupBoxLogin: TGroupBox;
@@ -24,6 +24,7 @@ type
     LabelResetarSenha: TLabel;
     LabelTitulo: TLabel;
     PanelFoter: TPanel;
+    procedure ButtonEntrarClick(Sender: TObject);
   private
 
   public
@@ -35,7 +36,15 @@ var
 
 implementation
 
+uses unitinicio;
 {$R *.lfm}
+
+{ TformLogin }
+
+procedure TformLogin.ButtonEntrarClick(Sender: TObject);
+begin
+   FormInicial.ShowModal;
+end;
 
 end.
 

@@ -1,0 +1,114 @@
+object FormCadModerador: TFormCadModerador
+  Left = 0
+  Height = 368
+  Top = 0
+  Width = 708
+  Caption = 'Cadastrar Moderador'
+  ClientHeight = 368
+  ClientWidth = 708
+  Color = clFuchsia
+  Visible = False
+  object DBGroupCadModerador: TDBGroupBox
+    Left = 32
+    Height = 312
+    Top = 32
+    Width = 641
+    Caption = 'Dados para Cadastrar Moderador'
+    ClientHeight = 294
+    ClientWidth = 639
+    TabOrder = 0
+    object DBGroupIdModerador: TDBGroupBox
+      Left = 24
+      Height = 48
+      Top = 0
+      Width = 72
+      Caption = 'Id'
+      ClientHeight = 30
+      ClientWidth = 70
+      TabOrder = 0
+      object DBEditId: TDBEdit
+        Left = 0
+        Height = 29
+        Top = 0
+        Width = 72
+        CharCase = ecNormal
+        MaxLength = 0
+        TabOrder = 0
+      end
+    end
+    object DBGroupBoxUsuario: TDBGroupBox
+      Left = 24
+      Height = 49
+      Top = 56
+      Width = 257
+      Caption = 'Usuário'
+      ClientHeight = 31
+      ClientWidth = 255
+      TabOrder = 1
+      object DBEditModerador: TDBEdit
+        Left = 0
+        Height = 29
+        Top = 0
+        Width = 256
+        CharCase = ecNormal
+        MaxLength = 0
+        TabOrder = 0
+      end
+    end
+    object DBGroupCadSenha: TDBGroupBox
+      Left = 24
+      Height = 49
+      Top = 120
+      Width = 257
+      Caption = 'Senha'
+      ClientHeight = 31
+      ClientWidth = 255
+      TabOrder = 2
+      object DBEditCadSenha: TDBEdit
+        Left = 0
+        Height = 29
+        Top = 0
+        Width = 256
+        CharCase = ecNormal
+        MaxLength = 0
+        TabOrder = 0
+      end
+    end
+    object DBGroupBoxDataMod: TDBGroupBox
+      Left = 400
+      Height = 209
+      Top = 0
+      Width = 224
+      Caption = 'Data'
+      ClientHeight = 191
+      ClientWidth = 222
+      TabOrder = 3
+      object DBCalendar1: TDBCalendar
+        Left = 0
+        Height = 190
+        Top = 0
+        Width = 220
+        DateTime = 43440
+        TabOrder = 0
+      end
+    end
+    object DBNavigator1: TDBNavigator
+      Left = 0
+      Height = 25
+      Top = 269
+      Width = 639
+      Align = alBottom
+      BevelOuter = bvNone
+      ChildSizing.EnlargeHorizontal = crsScaleChilds
+      ChildSizing.EnlargeVertical = crsScaleChilds
+      ChildSizing.ShrinkHorizontal = crsScaleChilds
+      ChildSizing.ShrinkVertical = crsScaleChilds
+      ChildSizing.Layout = cclLeftToRightThenTopToBottom
+      ChildSizing.ControlsPerLine = 100
+      ClientHeight = 25
+      ClientWidth = 639
+      Options = []
+      TabOrder = 4
+    end
+  end
+end

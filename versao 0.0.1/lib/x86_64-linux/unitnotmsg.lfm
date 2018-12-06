@@ -1,0 +1,10 @@
+object FormNotMsg: TFormNotMsg
+  Left = 0
+  Height = 240
+  Top = 0
+  Width = 320
+  Caption = 'Notificação de Mensagem'
+  ClientHeight = 240
+  ClientWidth = 320
+  Visible = False
+end

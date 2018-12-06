@@ -32,48 +32,56 @@ object FormInicial: TFormInicial
       Caption = '&Cadastro'
       object MenuItemModerador: TMenuItem
         Caption = '&Moderador'
+        OnClick = MenuItemModeradorClick
       end
       object MenuItem1: TMenuItem
         Caption = '-'
       end
       object MenuItemUsuario: TMenuItem
         Caption = '&Usuário'
+        OnClick = MenuItemUsuarioClick
       end
       object MenuItem2: TMenuItem
         Caption = '-'
       end
       object MenuItemNovoTipo: TMenuItem
         Caption = '&Novo tipo'
+        OnClick = MenuItemNovoTipoClick
       end
       object MenuItem3: TMenuItem
         Caption = '-'
       end
       object MenuItemEscola: TMenuItem
         Caption = '&Escola'
+        OnClick = MenuItemEscolaClick
       end
     end
     object MenuItemNotificacao: TMenuItem
       Caption = '&Notificações'
       object MenuItemDenuncia: TMenuItem
         Caption = '&Denúncia Nova'
+        OnClick = MenuItemDenunciaClick
       end
       object MenuItem4: TMenuItem
         Caption = '-'
       end
       object MenuItemProblemas: TMenuItem
         Caption = '&Problemas'
+        OnClick = MenuItemProblemasClick
       end
       object MenuItem5: TMenuItem
         Caption = '-'
       end
       object MenuItemMensagem: TMenuItem
         Caption = '&Mensagem'
+        OnClick = MenuItemMensagemClick
       end
       object MenuItem6: TMenuItem
         Caption = '-'
       end
-      object MenuItemPEdido: TMenuItem
+      object MenuItemPedido: TMenuItem
         Caption = 'Pedido de &Atualização'
+        OnClick = MenuItemPedidoClick
       end
     end
     object MenuItemAnalise: TMenuItem
@@ -144,9 +152,27 @@ object FormInicial: TFormInicial
     end
     object MenuItemAcompanharDenuncia: TMenuItem
       Caption = 'Acompanhar &Denúncias'
+      object MenuItemAndamento: TMenuItem
+        Caption = '&Andamento'
+      end
+      object MenuItem20: TMenuItem
+        Caption = '-'
+      end
+      object MenuItemEncerraD: TMenuItem
+        Caption = '&Encerrar Denúncia'
+      end
+      object MenuItem19: TMenuItem
+        Caption = '-'
+      end
+      object MenuItemAbrirCaso: TMenuItem
+        Caption = 'Abrir &Caso'
+      end
     end
     object MenuItemSobre: TMenuItem
       Caption = '&Sobre'
+    end
+    object MenuItemConfiguracao: TMenuItem
+      Caption = '&Configurações'
     end
   end
 end

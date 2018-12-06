@@ -1,0 +1,10 @@
+object FormNotDenucia: TFormNotDenucia
+  Left = 0
+  Height = 240
+  Top = 0
+  Width = 320
+  Caption = 'Notificação de Denúncia'
+  ClientHeight = 240
+  ClientWidth = 320
+  Visible = False
+end
