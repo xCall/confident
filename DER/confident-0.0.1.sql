@@ -1,5 +1,6 @@
 CREATE DATABASE confident;
-CREATE TABLE escola(id_escola INT NOT NULL,
+CREATE TABLE escola(
+	id_escola INT NOT NULL,
     nome_escola VARCHAR(60),
     cidade_escola VARCHAR(20),
     cep CHAR(7),

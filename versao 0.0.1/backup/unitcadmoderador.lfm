@@ -10,75 +10,131 @@ object FormCadModerador: TFormCadModerador
   Visible = False
   object DBGroupCadModerador: TDBGroupBox
     Left = 32
-    Height = 238
-    Top = 16
+    Height = 312
+    Top = 32
     Width = 641
     Caption = 'Dados para Cadastrar Moderador'
-    ClientHeight = 220
+    ClientHeight = 294
     ClientWidth = 639
     TabOrder = 0
     object DBGroupIdModerador: TDBGroupBox
-      Left = 45
+      Left = 24
       Height = 48
-      Top = 24
-      Width = 185
+      Top = 0
+      Width = 72
       Caption = 'Id'
       ClientHeight = 30
-      ClientWidth = 183
+      ClientWidth = 70
       TabOrder = 0
       object DBEditId: TDBEdit
         Left = 0
         Height = 29
         Top = 0
-        Width = 184
+        Width = 72
+        DataField = 'id_admin'
+        DataSource = DataModule1.SourceTableModerador
+        ReadOnly = True
         CharCase = ecNormal
         MaxLength = 0
         TabOrder = 0
       end
     end
-    object DBRadioGroupDataModerador: TDBRadioGroup
-      Left = 280
-      Height = 48
-      Top = 24
-      Width = 185
-      Caption = 'Data'
-      TabOrder = 1
-      object DBDateTimePicker1: TDBDateTimePicker
-        Left = 6
-        Height = 30
-        Top = 0
-        Width = 171
-        ReadOnly = False
-        CenturyFrom = 1941
-        MaxDate = 2958465
-        MinDate = -53780
-        TabOrder = 0
-        TrailingSeparator = False
-        TextForNullDate = 'NULL'
-        LeadingZeros = True
-        Kind = dtkDate
-        TimeFormat = tf24
-        TimeDisplay = tdHMS
-        DateMode = dmComboBox
-        UseDefaultSeparators = True
-        HideDateTimeParts = []
-        MonthNames = 'Long'
-      end
-    end
     object DBGroupBoxUsuario: TDBGroupBox
-      Left = 44
+      Left = 24
       Height = 49
-      Top = 88
-      Width = 185
+      Top = 56
+      Width = 257
       Caption = 'Usuário'
       ClientHeight = 31
-      ClientWidth = 183
-      TabOrder = 2
+      ClientWidth = 255
+      TabOrder = 1
       object DBEditModerador: TDBEdit
-        Left = 1
+        Left = 0
         Height = 29
         Top = 0
-        Width = 183
+        Width = 256
+        DataField = 'nome_admin'
+        DataSource = DataModule1.SourceTableModerador
+        CharCase = ecNormal
+        MaxLength = 80
+        TabOrder = 0
+      end
+    end
+    object DBGroupCadSenha: TDBGroupBox
+      Left = 24
+      Height = 49
+      Top = 120
+      Width = 257
+      Caption = 'Senha'
+      ClientHeight = 31
+      ClientWidth = 255
+      TabOrder = 2
+      object DBEditCadSenha: TDBEdit
+        Left = 0
+        Height = 29
+        Top = 0
+        Width = 256
+        DataField = 'senha_admin'
+        DataSource = DataModule1.SourceTableModerador
+        CharCase = ecNormal
+        MaxLength = 180
+        TabOrder = 0
+      end
+    end
+    object DBGroupBoxDataMod: TDBGroupBox
+      Left = 400
+      Height = 209
+      Top = 0
+      Width = 224
+      Caption = 'Data'
+      ClientHeight = 191
+      ClientWidth = 222
+      TabOrder = 3
+      object DBCalendar1: TDBCalendar
+        Left = 0
+        Height = 190
+        Top = 0
+        Width = 220
+        DateTime = 43440
+        TabOrder = 0
+        DataField = 'data_mod'
+        DataSource = DataModule1.SourceTableModerador
+      end
+    end
+    object DBNavigator1: TDBNavigator
+      Left = 0
+      Height = 25
+      Top = 269
+      Width = 639
+      Align = alBottom
+      BevelOuter = bvNone
+      ChildSizing.EnlargeHorizontal = crsScaleChilds
+      ChildSizing.EnlargeVertical = crsScaleChilds
+      ChildSizing.ShrinkHorizontal = crsScaleChilds
+      ChildSizing.ShrinkVertical = crsScaleChilds
+      ChildSizing.Layout = cclLeftToRightThenTopToBottom
+      ChildSizing.ControlsPerLine = 100
+      ClientHeight = 25
+      ClientWidth = 639
+      Options = []
+      TabOrder = 4
+    end
+    object DBGAcesso: TDBGroupBox
+      Left = 24
+      Height = 49
+      Top = 184
+      Width = 185
+      Caption = 'Acesso'
+      ClientHeight = 31
+      ClientWidth = 183
+      TabOrder = 5
+      object DBEdit1: TDBEdit
+        Left = 0
+        Height = 29
+        Top = 0
+        Width = 184
+        DataField = 'acesso'
+        DataSource = DataModule1.SourceTableModerador
         CharCase = ecNormal
         MaxLength = 0
         TabOrder = 0

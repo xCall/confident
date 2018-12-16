@@ -9,13 +9,15 @@ uses
   Interfaces, // this includes the LCL widgetset
   Forms, pascalscript, datetimectrls, unitprincipal, unitinicio,
   unitcadmoderador, unitcadusuario, unitcadtpdenuncia, unitcadescola,
-  unitnotdenuncia, unitnotproblemas, unitnotmsg, unitnotpedido;
+  unitnotdenuncia, unitnotproblemas, unitnotmsg, unitnotpedido, unitdados,
+  zcomponent;
 
 {$R *.res}
 
 begin
   RequireDerivedFormResource:=True;
   Application.Initialize;
+  Application.CreateForm(TDataModule1, DataModule1);
   Application.CreateForm(TformLogin, formLogin);
   Application.CreateForm(TFormInicial, FormInicial);
   Application.CreateForm(TFormCadModerador, FormCadModerador);

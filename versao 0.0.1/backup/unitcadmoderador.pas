@@ -13,13 +13,18 @@ type
   { TFormCadModerador }
 
   TFormCadModerador = class(TForm)
-    DBDateTimePicker1: TDBDateTimePicker;
+    DBCalendar1: TDBCalendar;
+    DBEdit1: TDBEdit;
+    DBEditCadSenha: TDBEdit;
     DBEditModerador: TDBEdit;
     DBEditId: TDBEdit;
+    DBGAcesso: TDBGroupBox;
+    DBGroupBoxDataMod: TDBGroupBox;
+    DBGroupCadSenha: TDBGroupBox;
     DBGroupBoxUsuario: TDBGroupBox;
     DBGroupIdModerador: TDBGroupBox;
     DBGroupCadModerador: TDBGroupBox;
-    DBRadioGroupDataModerador: TDBRadioGroup;
+    DBNavigator1: TDBNavigator;
   private
 
   public

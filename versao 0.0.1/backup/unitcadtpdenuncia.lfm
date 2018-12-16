@@ -14,6 +14,64 @@ object FormCadNovoTipo: TFormCadNovoTipo
     Top = 16
     Width = 752
     Caption = 'Cadastrar Tipo de Denúncia'
+    ClientHeight = 305
+    ClientWidth = 750
     TabOrder = 0
+    object DBGroupBoxIdDenuncia: TDBGroupBox
+      Left = 40
+      Height = 49
+      Top = 24
+      Width = 80
+      Caption = 'Id'
+      ClientHeight = 31
+      ClientWidth = 78
+      TabOrder = 0
+      object DBEditId: TDBEdit
+        Left = 0
+        Height = 29
+        Top = 0
+        Width = 80
+        CharCase = ecNormal
+        MaxLength = 0
+        TabOrder = 0
+      end
+    end
+    object DBGroupBoxNovaDenuncia: TDBGroupBox
+      Left = 40
+      Height = 49
+      Top = 112
+      Width = 304
+      Caption = 'Nova Denúncia'
+      ClientHeight = 31
+      ClientWidth = 302
+      TabOrder = 1
+      object DBEditNovaDenuncia: TDBEdit
+        Left = 0
+        Height = 29
+        Top = 0
+        Width = 304
+        CharCase = ecNormal
+        MaxLength = 0
+        TabOrder = 0
+      end
+    end
+    object DBNavigator1: TDBNavigator
+      Left = 0
+      Height = 25
+      Top = 280
+      Width = 750
+      Align = alBottom
+      BevelOuter = bvNone
+      ChildSizing.EnlargeHorizontal = crsScaleChilds
+      ChildSizing.EnlargeVertical = crsScaleChilds
+      ChildSizing.ShrinkHorizontal = crsScaleChilds
+      ChildSizing.ShrinkVertical = crsScaleChilds
+      ChildSizing.Layout = cclLeftToRightThenTopToBottom
+      ChildSizing.ControlsPerLine = 100
+      ClientHeight = 25
+      ClientWidth = 750
+      Options = []
+      TabOrder = 2
+    end
   end
 end

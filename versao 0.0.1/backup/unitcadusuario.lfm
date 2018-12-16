@@ -8,12 +8,139 @@ object FormCadUsuario: TFormCadUsuario
   ClientWidth = 800
   Color = clFuchsia
   Visible = False
-  object DBGroupBox: TDBGroupBox
+  object DBGroupBoxCad: TDBGroupBox
     Left = 24
     Height = 325
     Top = 27
     Width = 745
-    Caption = 'DBGroupBox'
+    Caption = 'Cadastrar Usuário'
+    ClientHeight = 307
+    ClientWidth = 743
     TabOrder = 0
+    object DBGId: TDBGroupBox
+      Left = 15
+      Height = 48
+      Top = 0
+      Width = 81
+      Caption = 'Id'
+      ClientHeight = 30
+      ClientWidth = 79
+      TabOrder = 0
+      object DBEdit1: TDBEdit
+        Left = 0
+        Height = 29
+        Top = 0
+        Width = 80
+        DataField = 'id_cadastro_usuario'
+        DataSource = DataModule1.SourceTableUsuario
+        ReadOnly = True
+        CharCase = ecNormal
+        MaxLength = 0
+        TabOrder = 0
+      end
+    end
+    object DBGNomeUsuario: TDBGroupBox
+      Left = 14
+      Height = 49
+      Top = 63
+      Width = 218
+      Caption = 'Nome Do Usuário'
+      ClientHeight = 31
+      ClientWidth = 216
+      TabOrder = 1
+      object DBEdit2: TDBEdit
+        Left = 1
+        Height = 29
+        Top = 0
+        Width = 215
+        DataField = 'nome_usuario'
+        DataSource = DataModule1.SourceTableUsuario
+        CharCase = ecNormal
+        MaxLength = 160
+        TabOrder = 0
+      end
+    end
+    object DBGSenha: TDBGroupBox
+      Left = 13
+      Height = 48
+      Top = 128
+      Width = 219
+      Caption = 'Senha'
+      ClientHeight = 30
+      ClientWidth = 217
+      TabOrder = 2
+      object DBEdit3: TDBEdit
+        Left = 2
+        Height = 29
+        Top = 0
+        Width = 216
+        DataField = 'senha_usuario'
+        DataSource = DataModule1.SourceTableUsuario
+        CharCase = ecNormal
+        MaxLength = 64
+        TabOrder = 0
+      end
+    end
+    object DBGCurso: TDBGroupBox
+      Left = 13
+      Height = 49
+      Top = 200
+      Width = 185
+      Caption = 'Curso'
+      ClientHeight = 31
+      ClientWidth = 183
+      TabOrder = 3
+      object DBEdit4: TDBEdit
+        Left = 0
+        Height = 29
+        Top = 0
+        Width = 184
+        DataField = 'curso_usuario'
+        DataSource = DataModule1.SourceTableUsuario
+        CharCase = ecNormal
+        MaxLength = 120
+        TabOrder = 0
+      end
+    end
+    object DBNavigator1: TDBNavigator
+      Left = 0
+      Height = 25
+      Top = 282
+      Width = 743
+      Align = alBottom
+      BevelOuter = bvNone
+      ChildSizing.EnlargeHorizontal = crsScaleChilds
+      ChildSizing.EnlargeVertical = crsScaleChilds
+      ChildSizing.ShrinkHorizontal = crsScaleChilds
+      ChildSizing.ShrinkVertical = crsScaleChilds
+      ChildSizing.Layout = cclLeftToRightThenTopToBottom
+      ChildSizing.ControlsPerLine = 100
+      ClientHeight = 25
+      ClientWidth = 743
+      DataSource = DataModule1.SourceTableUsuario
+      Options = []
+      TabOrder = 4
+    end
+    object DBGroupBox1: TDBGroupBox
+      Left = 320
+      Height = 49
+      Top = 0
+      Width = 81
+      Caption = 'Id Escola'
+      ClientHeight = 31
+      ClientWidth = 79
+      TabOrder = 5
+      object DBEdit5: TDBEdit
+        Left = 0
+        Height = 29
+        Top = 0
+        Width = 80
+        DataField = 'id_escola'
+        DataSource = DataModule1.SourceTableUsuario
+        CharCase = ecNormal
+        MaxLength = 0
+        TabOrder = 0
+      end
+    end
   end
 end

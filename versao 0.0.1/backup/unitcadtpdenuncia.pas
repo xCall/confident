@@ -12,7 +12,12 @@ type
   { TFormCadNovoTipo }
 
   TFormCadNovoTipo = class(TForm)
+    DBEditId: TDBEdit;
+    DBEditNovaDenuncia: TDBEdit;
+    DBGroupBoxNovaDenuncia: TDBGroupBox;
+    DBGroupBoxIdDenuncia: TDBGroupBox;
     DBGroupBoxTpDenuncia: TDBGroupBox;
+    DBNavigator1: TDBNavigator;
   private
 
   public

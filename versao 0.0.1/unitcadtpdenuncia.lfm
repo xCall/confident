@@ -31,6 +31,8 @@ object FormCadNovoTipo: TFormCadNovoTipo
         Height = 29
         Top = 0
         Width = 80
+        DataField = 'id_tp_denuncia'
+        DataSource = DataModule1.SourceTableTpDenuncia
         CharCase = ecNormal
         MaxLength = 0
         TabOrder = 0
@@ -50,6 +52,8 @@ object FormCadNovoTipo: TFormCadNovoTipo
         Height = 29
         Top = 0
         Width = 304
+        DataField = 'id_tp_denuncia'
+        DataSource = DataModule1.SourceTableTpDenuncia
         CharCase = ecNormal
         MaxLength = 0
         TabOrder = 0
@@ -70,6 +74,7 @@ object FormCadNovoTipo: TFormCadNovoTipo
       ChildSizing.ControlsPerLine = 100
       ClientHeight = 25
       ClientWidth = 750
+      DataSource = DataModule1.SourceTableTpDenuncia
       Options = []
       TabOrder = 2
     end

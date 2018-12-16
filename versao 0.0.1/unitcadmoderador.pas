@@ -14,9 +14,11 @@ type
 
   TFormCadModerador = class(TForm)
     DBCalendar1: TDBCalendar;
+    DBEdit1: TDBEdit;
     DBEditCadSenha: TDBEdit;
     DBEditModerador: TDBEdit;
     DBEditId: TDBEdit;
+    DBGAcesso: TDBGroupBox;
     DBGroupBoxDataMod: TDBGroupBox;
     DBGroupCadSenha: TDBGroupBox;
     DBGroupBoxUsuario: TDBGroupBox;

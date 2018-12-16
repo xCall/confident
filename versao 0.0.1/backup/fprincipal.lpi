@@ -21,21 +21,27 @@
         <FormatVersion Value="1"/>
       </local>
     </RunParams>
-    <RequiredPackages Count="4">
+    <RequiredPackages Count="6">
       <Item1>
-        <PackageName Value="DateTimeCtrls"/>
+        <PackageName Value="FCL"/>
       </Item1>
       <Item2>
-        <PackageName Value="SynEdit"/>
+        <PackageName Value="zcomponent"/>
       </Item2>
       <Item3>
-        <PackageName Value="pascalscript"/>
+        <PackageName Value="DateTimeCtrls"/>
       </Item3>
       <Item4>
-        <PackageName Value="LCL"/>
+        <PackageName Value="SynEdit"/>
       </Item4>
+      <Item5>
+        <PackageName Value="pascalscript"/>
+      </Item5>
+      <Item6>
+        <PackageName Value="LCL"/>
+      </Item6>
     </RequiredPackages>
-    <Units Count="11">
+    <Units Count="12">
       <Unit0>
         <Filename Value="fprincipal.lpr"/>
         <IsPartOfProject Value="True"/>
@@ -58,50 +64,65 @@
         <Filename Value="unitcadmoderador.pas"/>
         <IsPartOfProject Value="True"/>
         <ComponentName Value="FormCadModerador"/>
+        <HasResources Value="True"/>
         <ResourceBaseClass Value="Form"/>
       </Unit3>
       <Unit4>
         <Filename Value="unitcadusuario.pas"/>
         <IsPartOfProject Value="True"/>
         <ComponentName Value="FormCadUsuario"/>
+        <HasResources Value="True"/>
         <ResourceBaseClass Value="Form"/>
       </Unit4>
       <Unit5>
         <Filename Value="unitcadtpdenuncia.pas"/>
         <IsPartOfProject Value="True"/>
         <ComponentName Value="FormCadNovoTipo"/>
+        <HasResources Value="True"/>
         <ResourceBaseClass Value="Form"/>
       </Unit5>
       <Unit6>
         <Filename Value="unitcadescola.pas"/>
         <IsPartOfProject Value="True"/>
         <ComponentName Value="FormCadEscola"/>
+        <HasResources Value="True"/>
         <ResourceBaseClass Value="Form"/>
       </Unit6>
       <Unit7>
         <Filename Value="unitnotdenuncia.pas"/>
         <IsPartOfProject Value="True"/>
         <ComponentName Value="FormNotDenucia"/>
+        <HasResources Value="True"/>
         <ResourceBaseClass Value="Form"/>
       </Unit7>
       <Unit8>
         <Filename Value="unitnotproblemas.pas"/>
         <IsPartOfProject Value="True"/>
         <ComponentName Value="FormNotProblemas"/>
+        <HasResources Value="True"/>
         <ResourceBaseClass Value="Form"/>
       </Unit8>
       <Unit9>
         <Filename Value="unitnotmsg.pas"/>
         <IsPartOfProject Value="True"/>
         <ComponentName Value="FormNotMsg"/>
+        <HasResources Value="True"/>
         <ResourceBaseClass Value="Form"/>
       </Unit9>
       <Unit10>
         <Filename Value="unitnotpedido.pas"/>
         <IsPartOfProject Value="True"/>
         <ComponentName Value="FormNotPedido"/>
+        <HasResources Value="True"/>
         <ResourceBaseClass Value="Form"/>
       </Unit10>
+      <Unit11>
+        <Filename Value="unitdados.pas"/>
+        <IsPartOfProject Value="True"/>
+        <ComponentName Value="DataModule1"/>
+        <HasResources Value="True"/>
+        <ResourceBaseClass Value="DataModule"/>
+      </Unit11>
     </Units>
   </ProjectOptions>
   <CompilerOptions>
