@@ -18,9 +18,9 @@ object FormCadNovoTipo: TFormCadNovoTipo
     ClientWidth = 750
     TabOrder = 0
     object DBGroupBoxIdDenuncia: TDBGroupBox
-      Left = 40
+      Left = 120
       Height = 49
-      Top = 24
+      Top = 72
       Width = 80
       Caption = 'Id'
       ClientHeight = 31
@@ -28,20 +28,21 @@ object FormCadNovoTipo: TFormCadNovoTipo
       TabOrder = 0
       object DBEditId: TDBEdit
         Left = 0
-        Height = 29
+        Height = 31
         Top = 0
-        Width = 80
+        Width = 78
         DataField = 'id_tp_denuncia'
         DataSource = DataModule1.SourceTableTpDenuncia
+        Align = alClient
         CharCase = ecNormal
         MaxLength = 0
         TabOrder = 0
       end
     end
     object DBGroupBoxNovaDenuncia: TDBGroupBox
-      Left = 40
+      Left = 344
       Height = 49
-      Top = 112
+      Top = 72
       Width = 304
       Caption = 'Nova Denúncia'
       ClientHeight = 31
@@ -49,11 +50,12 @@ object FormCadNovoTipo: TFormCadNovoTipo
       TabOrder = 1
       object DBEditNovaDenuncia: TDBEdit
         Left = 0
-        Height = 29
+        Height = 31
         Top = 0
-        Width = 304
+        Width = 302
         DataField = 'id_tp_denuncia'
         DataSource = DataModule1.SourceTableTpDenuncia
+        Align = alClient
         CharCase = ecNormal
         MaxLength = 0
         TabOrder = 0

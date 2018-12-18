@@ -1,9 +1,9 @@
-object Form3: TForm3
+object FormNotDenucia: TFormNotDenucia
   Left = 0
   Height = 240
   Top = 0
   Width = 320
-  Caption = 'Form3'
+  Caption = 'Notificação de Denúncia'
   ClientHeight = 240
   ClientWidth = 320
   LCLVersion = '1.8.4.0'

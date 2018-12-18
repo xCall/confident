@@ -1,0 +1,10 @@
+object FormTDEscola: TFormTDEscola
+  Left = 0
+  Height = 378
+  Top = 0
+  Width = 850
+  Caption = 'Tabela de Dados Escola'
+  ClientHeight = 378
+  ClientWidth = 850
+  Visible = False
+end

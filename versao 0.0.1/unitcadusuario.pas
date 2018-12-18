@@ -15,11 +15,7 @@ type
     DBEdit1: TDBEdit;
     DBEdit2: TDBEdit;
     DBEdit3: TDBEdit;
-    DBEdit4: TDBEdit;
-    DBEdit5: TDBEdit;
     DBGNomeUsuario: TDBGroupBox;
-    DBGCurso: TDBGroupBox;
-    DBGroupBox1: TDBGroupBox;
     DBGSenha: TDBGroupBox;
     DBGroupBoxCad: TDBGroupBox;
     DBGId: TDBGroupBox;

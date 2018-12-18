@@ -56,68 +56,18 @@ object FormInicial: TFormInicial
         OnClick = MenuItemEscolaClick
       end
     end
-    object MenuItemNotificacao: TMenuItem
-      Caption = '&Notificações'
-      object MenuItemDenuncia: TMenuItem
-        Caption = '&Denúncia Nova'
-        OnClick = MenuItemDenunciaClick
-      end
-      object MenuItem4: TMenuItem
-        Caption = '-'
-      end
-      object MenuItemProblemas: TMenuItem
-        Caption = '&Problemas'
-        OnClick = MenuItemProblemasClick
-      end
-      object MenuItem5: TMenuItem
-        Caption = '-'
-      end
-      object MenuItemMensagem: TMenuItem
-        Caption = '&Mensagem'
-        OnClick = MenuItemMensagemClick
-      end
-      object MenuItem6: TMenuItem
-        Caption = '-'
-      end
-      object MenuItemPedido: TMenuItem
-        Caption = 'Pedido de &Atualização'
-        OnClick = MenuItemPedidoClick
-      end
-    end
-    object MenuItemAnalise: TMenuItem
-      Caption = '&Análise de Dados'
-      object MenuItemImprimir: TMenuItem
-        Caption = 'Imprimir &Relatório'
-      end
-      object MenuItem8: TMenuItem
-        Caption = '-'
-      end
-      object MenuItemDadosUser: TMenuItem
-        Caption = '&Imprimir Dados de Usuário'
-      end
-      object MenuItem10: TMenuItem
-        Caption = '-'
-      end
-      object MenuItemGrafico: TMenuItem
-        Caption = '&Gráfico de Uso'
-      end
-      object MenuItem12: TMenuItem
-        Caption = '-'
-      end
-      object MenuItemMovimentacao: TMenuItem
-        Caption = '&Movimentação'
-      end
-    end
     object MenuItemTabelas: TMenuItem
       Caption = '&Tabelas'
       object MenuItemTDUsuario: TMenuItem
         Caption = 'Tabelas Dados &Usuário'
+        OnClick = MenuItemTDUsuarioClick
       end
       object MenuItem9: TMenuItem
         Caption = '-'
       end
       object MenuItemTDEscola: TMenuItem
         Caption = 'Tabela Dados &Escola'
+        OnClick = MenuItemTDEscolaClick
       end
       object MenuItem13: TMenuItem
         Caption = '-'
@@ -149,30 +99,6 @@ object FormInicial: TFormInicial
       object MenuItemLogAt: TMenuItem
         Caption = '&Log de Atualizações'
       end
-    end
-    object MenuItemAcompanharDenuncia: TMenuItem
-      Caption = 'Acompanhar &Denúncias'
-      object MenuItemAndamento: TMenuItem
-        Caption = '&Andamento'
-      end
-      object MenuItem20: TMenuItem
-        Caption = '-'
-      end
-      object MenuItemEncerraD: TMenuItem
-        Caption = '&Encerrar Denúncia'
-      end
-      object MenuItem19: TMenuItem
-        Caption = '-'
-      end
-      object MenuItemAbrirCaso: TMenuItem
-        Caption = 'Abrir &Caso'
-      end
-    end
-    object MenuItemSobre: TMenuItem
-      Caption = '&Sobre'
-    end
-    object MenuItemConfiguracao: TMenuItem
-      Caption = '&Configurações'
     end
   end
 end

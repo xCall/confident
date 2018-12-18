@@ -6,5 +6,6 @@ object FormNotMsg: TFormNotMsg
   Caption = 'Notificação de Mensagem'
   ClientHeight = 240
   ClientWidth = 320
+  LCLVersion = '1.8.4.0'
   Visible = False
 end

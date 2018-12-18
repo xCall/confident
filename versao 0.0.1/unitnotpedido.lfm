@@ -6,5 +6,6 @@ object FormNotPedido: TFormNotPedido
   Caption = 'Pedido de Melhorias'
   ClientHeight = 240
   ClientWidth = 320
+  LCLVersion = '1.8.4.0'
   Visible = False
 end

@@ -16,13 +16,7 @@ type
     LabelTitulo: TLabel;
     MainMenuPrincipal: TMainMenu;
     MenuItem1: TMenuItem;
-    MenuItem10: TMenuItem;
-    MenuItemConfiguracao: TMenuItem;
-    MenuItemEncerraD: TMenuItem;
     MenuItem16: TMenuItem;
-    MenuItem19: TMenuItem;
-    MenuItem20: TMenuItem;
-    MenuItemAndamento: TMenuItem;
     MenuItemTGraficos: TMenuItem;
     MenuItem14: TMenuItem;
     MenuItemLogAt: TMenuItem;
@@ -36,39 +30,20 @@ type
     MenuItem17: TMenuItem;
     MenuItemTDUsuario: TMenuItem;
     MenuItem9: TMenuItem;
-    MenuItemGrafico: TMenuItem;
-    MenuItem12: TMenuItem;
-    MenuItemMovimentacao: TMenuItem;
     MenuItem2: TMenuItem;
     MenuItem3: TMenuItem;
-    MenuItem4: TMenuItem;
-    MenuItem5: TMenuItem;
-    MenuItem6: TMenuItem;
-    MenuItemImprimir: TMenuItem;
-    MenuItem8: TMenuItem;
-    MenuItemDadosUser: TMenuItem;
-    MenuItemDenuncia: TMenuItem;
-    MenuItemProblemas: TMenuItem;
-    MenuItemMensagem: TMenuItem;
-    MenuItemPedido: TMenuItem;
     MenuItemModerador: TMenuItem;
     MenuItemUsuario: TMenuItem;
     MenuItemNovoTipo: TMenuItem;
     MenuItemEscola: TMenuItem;
-    MenuItemAcompanharDenuncia: TMenuItem;
-    MenuItemSobre: TMenuItem;
     MenuItemCadastro: TMenuItem;
-    MenuItemNotificacao: TMenuItem;
-    MenuItemAnalise: TMenuItem;
     MenuItemTabelas: TMenuItem;
     procedure FormCreate(Sender: TObject);
-    procedure MenuItemDenunciaClick(Sender: TObject);
     procedure MenuItemEscolaClick(Sender: TObject);
-    procedure MenuItemMensagemClick(Sender: TObject);
     procedure MenuItemModeradorClick(Sender: TObject);
     procedure MenuItemNovoTipoClick(Sender: TObject);
-    procedure MenuItemPedidoClick(Sender: TObject);
-    procedure MenuItemProblemasClick(Sender: TObject);
+    procedure MenuItemTDEscolaClick(Sender: TObject);
+    procedure MenuItemTDUsuarioClick(Sender: TObject);
     procedure MenuItemUsuarioClick(Sender: TObject);
   private
 
@@ -82,8 +57,7 @@ var
 implementation
 
 uses unitcadmoderador, unitcadusuario, unitcadescola,
-  unitcadtpdenuncia, unitnotdenuncia, unitnotproblemas, unitnotmsg,
-  unitnotpedido;
+  unitcadtpdenuncia, unitabelausuario, unitabelaescola;
 
 {$R *.lfm}
 
@@ -93,21 +67,9 @@ procedure TFormInicial.FormCreate(Sender: TObject);
 begin
 
 end;
-
-procedure TFormInicial.MenuItemDenunciaClick(Sender: TObject);
-begin
-  FormNotDenucia.ShowModal;
-
-end;
-
 procedure TFormInicial.MenuItemEscolaClick(Sender: TObject);
 begin
   FormCadEscola.ShowModal;
-end;
-
-procedure TFormInicial.MenuItemMensagemClick(Sender: TObject);
-begin
-  FormNotMsg.ShowModal;
 end;
 
 procedure TFormInicial.MenuItemModeradorClick(Sender: TObject);
@@ -120,14 +82,14 @@ begin
   FormCadNovoTipo.ShowModal;
 end;
 
-procedure TFormInicial.MenuItemPedidoClick(Sender: TObject);
+procedure TFormInicial.MenuItemTDEscolaClick(Sender: TObject);
 begin
-  FormNot
+
 end;
 
-procedure TFormInicial.MenuItemProblemasClick(Sender: TObject);
+procedure TFormInicial.MenuItemTDUsuarioClick(Sender: TObject);
 begin
-  FormNotProblemas.ShowModal;
+ FormTDUsuario.ShowModal;
 end;
 
 procedure TFormInicial.MenuItemUsuarioClick(Sender: TObject);

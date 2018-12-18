@@ -1,10 +1,32 @@
 object FormNotDenucia: TFormNotDenucia
   Left = 0
-  Height = 240
+  Height = 378
   Top = 0
-  Width = 320
+  Width = 770
   Caption = 'Notificação de Denúncia'
-  ClientHeight = 240
-  ClientWidth = 320
+  ClientHeight = 378
+  ClientWidth = 770
+  Color = clFuchsia
   Visible = False
+  object DBGroupBox1: TDBGroupBox
+    Left = 16
+    Height = 362
+    Top = 8
+    Width = 738
+    Align = alCustom
+    ClientHeight = 360
+    ClientWidth = 736
+    TabOrder = 0
+    object DBGrid1: TDBGrid
+      Left = 0
+      Height = 360
+      Top = 0
+      Width = 736
+      Align = alClient
+      AutoFillColumns = True
+      Color = clWindow
+      Columns = <>
+      TabOrder = 0
+    end
+  end
 end

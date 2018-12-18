@@ -1,10 +1,173 @@
 object FormCadEscola: TFormCadEscola
   Left = 0
-  Height = 240
+  Height = 371
   Top = 0
-  Width = 320
+  Width = 770
   Caption = 'Cadastrar Nova Escola'
-  ClientHeight = 240
-  ClientWidth = 320
+  ClientHeight = 371
+  ClientWidth = 770
+  Color = clFuchsia
   Visible = False
+  object DBGCadEscola: TDBGroupBox
+    Left = 8
+    Height = 360
+    Top = 0
+    Width = 752
+    Caption = 'Cadastrar Escolas'
+    ClientHeight = 342
+    ClientWidth = 750
+    DataSource = DataModule1.SourceTableEscola
+    TabOrder = 0
+    object DBGId: TDBGroupBox
+      Left = 40
+      Height = 49
+      Top = 32
+      Width = 97
+      Caption = 'ID'
+      ClientHeight = 31
+      ClientWidth = 95
+      TabOrder = 0
+      object DBEdit1: TDBEdit
+        Left = 0
+        Height = 31
+        Top = 0
+        Width = 95
+        DataField = 'id_escola'
+        DataSource = DataModule1.SourceTableEscola
+        Align = alClient
+        CharCase = ecNormal
+        MaxLength = 0
+        TabOrder = 0
+      end
+    end
+    object DBGroupBox2: TDBGroupBox
+      Left = 216
+      Height = 49
+      Top = 32
+      Width = 288
+      Caption = 'Nome da Escola'
+      ClientHeight = 31
+      ClientWidth = 286
+      TabOrder = 1
+      object DBEdit2: TDBEdit
+        Left = 0
+        Height = 31
+        Top = 0
+        Width = 286
+        DataField = 'nome_escola'
+        DataSource = DataModule1.SourceTableEscola
+        Align = alClient
+        CharCase = ecNormal
+        MaxLength = 240
+        TabOrder = 0
+      end
+    end
+    object DBGCidade: TDBGroupBox
+      Left = 536
+      Height = 50
+      Top = 32
+      Width = 185
+      Caption = 'Cidade'
+      ClientHeight = 32
+      ClientWidth = 183
+      TabOrder = 2
+      object DBEdit3: TDBEdit
+        Left = 0
+        Height = 32
+        Top = 0
+        Width = 183
+        DataField = 'cidade_escola'
+        DataSource = DataModule1.SourceTableEscola
+        Align = alClient
+        CharCase = ecNormal
+        MaxLength = 80
+        TabOrder = 0
+      end
+    end
+    object DBGRua: TDBGroupBox
+      Left = 40
+      Height = 50
+      Top = 120
+      Width = 185
+      Caption = 'Rua'
+      ClientHeight = 32
+      ClientWidth = 183
+      TabOrder = 3
+      object DBEdit4: TDBEdit
+        Left = 0
+        Height = 32
+        Top = 0
+        Width = 183
+        DataField = 'rua'
+        DataSource = DataModule1.SourceTableEscola
+        Align = alClient
+        CharCase = ecNormal
+        MaxLength = 160
+        TabOrder = 0
+      end
+    end
+    object DBGCep: TDBGroupBox
+      Left = 288
+      Height = 50
+      Top = 120
+      Width = 185
+      Caption = 'CEP'
+      ClientHeight = 32
+      ClientWidth = 183
+      TabOrder = 4
+      object DBEdit5: TDBEdit
+        Left = 0
+        Height = 32
+        Top = 0
+        Width = 183
+        DataField = 'cep'
+        DataSource = DataModule1.SourceTableEscola
+        Align = alClient
+        CharCase = ecNormal
+        MaxLength = 28
+        TabOrder = 0
+      end
+    end
+    object DBGUf: TDBGroupBox
+      Left = 536
+      Height = 50
+      Top = 120
+      Width = 185
+      Caption = 'UF'
+      ClientHeight = 32
+      ClientWidth = 183
+      TabOrder = 5
+      object DBEdit6: TDBEdit
+        Left = 0
+        Height = 32
+        Top = 0
+        Width = 183
+        DataField = 'uf'
+        DataSource = DataModule1.SourceTableEscola
+        Align = alClient
+        CharCase = ecNormal
+        MaxLength = 8
+        TabOrder = 0
+      end
+    end
+    object DBNavigator1: TDBNavigator
+      Left = 0
+      Height = 25
+      Top = 317
+      Width = 750
+      Align = alBottom
+      BevelOuter = bvNone
+      ChildSizing.EnlargeHorizontal = crsScaleChilds
+      ChildSizing.EnlargeVertical = crsScaleChilds
+      ChildSizing.ShrinkHorizontal = crsScaleChilds
+      ChildSizing.ShrinkVertical = crsScaleChilds
+      ChildSizing.Layout = cclLeftToRightThenTopToBottom
+      ChildSizing.ControlsPerLine = 100
+      ClientHeight = 25
+      ClientWidth = 750
+      DataSource = DataModule1.SourceTableEscola
+      Options = []
+      TabOrder = 6
+    end
+  end
 end

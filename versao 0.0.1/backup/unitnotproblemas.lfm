@@ -1,9 +1,9 @@
-object Form4: TForm4
+object FormNotProblemas: TFormNotProblemas
   Left = 0
   Height = 240
   Top = 0
   Width = 320
-  Caption = 'Form4'
+  Caption = 'Notificação de Problemas'
   ClientHeight = 240
   ClientWidth = 320
   LCLVersion = '1.8.4.0'

@@ -18,9 +18,9 @@ object FormCadUsuario: TFormCadUsuario
     ClientWidth = 743
     TabOrder = 0
     object DBGId: TDBGroupBox
-      Left = 15
+      Left = 56
       Height = 48
-      Top = 0
+      Top = 63
       Width = 81
       Caption = 'Id'
       ClientHeight = 30
@@ -40,9 +40,9 @@ object FormCadUsuario: TFormCadUsuario
       end
     end
     object DBGNomeUsuario: TDBGroupBox
-      Left = 14
+      Left = 224
       Height = 49
-      Top = 63
+      Top = 62
       Width = 218
       Caption = 'Nome Do Usuário'
       ClientHeight = 31
@@ -61,9 +61,9 @@ object FormCadUsuario: TFormCadUsuario
       end
     end
     object DBGSenha: TDBGroupBox
-      Left = 13
+      Left = 504
       Height = 48
-      Top = 128
+      Top = 63
       Width = 219
       Caption = 'Senha'
       ClientHeight = 30
@@ -77,28 +77,7 @@ object FormCadUsuario: TFormCadUsuario
         DataField = 'senha_usuario'
         DataSource = DataModule1.SourceTableUsuario
         CharCase = ecNormal
-        MaxLength = 64
-        TabOrder = 0
-      end
-    end
-    object DBGCurso: TDBGroupBox
-      Left = 13
-      Height = 49
-      Top = 200
-      Width = 185
-      Caption = 'Curso'
-      ClientHeight = 31
-      ClientWidth = 183
-      TabOrder = 3
-      object DBEdit4: TDBEdit
-        Left = 0
-        Height = 29
-        Top = 0
-        Width = 184
-        DataField = 'curso_usuario'
-        DataSource = DataModule1.SourceTableUsuario
-        CharCase = ecNormal
-        MaxLength = 120
+        MaxLength = 60
         TabOrder = 0
       end
     end
@@ -119,29 +98,7 @@ object FormCadUsuario: TFormCadUsuario
       ClientWidth = 743
       DataSource = DataModule1.SourceTableUsuario
       Options = []
-      TabOrder = 4
-    end
-    object DBGroupBox1: TDBGroupBox
-      Left = 320
-      Height = 49
-      Top = 0
-      Width = 81
-      Caption = 'Id Escola'
-      ClientHeight = 31
-      ClientWidth = 79
-      TabOrder = 5
-      object DBEdit5: TDBEdit
-        Left = 0
-        Height = 29
-        Top = 0
-        Width = 80
-        DataField = 'id_escola'
-        DataSource = DataModule1.SourceTableUsuario
-        ReadOnly = True
-        CharCase = ecNormal
-        MaxLength = 0
-        TabOrder = 0
-      end
+      TabOrder = 3
     end
   end
 end

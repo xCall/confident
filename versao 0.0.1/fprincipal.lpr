@@ -9,8 +9,8 @@ uses
   Interfaces, // this includes the LCL widgetset
   Forms, pascalscript, datetimectrls, unitprincipal, unitinicio,
   unitcadmoderador, unitcadusuario, unitcadtpdenuncia, unitcadescola,
-  unitnotdenuncia, unitnotproblemas, unitnotmsg, unitnotpedido, unitdados,
-  zcomponent;
+  unitdados, unitnotdenuncia, unitnotproblemas,
+  zcomponent, unitabelausuario, unitabelaescola;
 
 {$R *.res}
 
@@ -26,8 +26,8 @@ begin
   Application.CreateForm(TFormCadEscola, FormCadEscola);
   Application.CreateForm(TFormNotDenucia, FormNotDenucia);
   Application.CreateForm(TFormNotProblemas, FormNotProblemas);
-  Application.CreateForm(TFormNotMsg, FormNotMsg);
-  Application.CreateForm(TFormNotPedido, FormNotPedido);
+  Application.CreateForm(TFormTDUsuario, FormTDUsuario);
+  Application.CreateForm(TFormTDEscola, FormTDEscola);
   Application.Run;
 end.
 

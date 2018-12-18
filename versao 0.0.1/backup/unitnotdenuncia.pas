@@ -8,7 +8,7 @@ uses
   Classes, SysUtils, FileUtil, Forms, Controls, Graphics, Dialogs;
 
 type
-  TForm3 = class(TForm)
+  TFormNotDenucia = class(TForm)
   private
 
   public
@@ -16,7 +16,7 @@ type
   end;
 
 var
-  Form3: TForm3;
+  FormNotDenucia: TFormNotDenucia;
 
 implementation
 

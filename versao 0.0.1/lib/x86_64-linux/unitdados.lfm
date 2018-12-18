@@ -12,9 +12,12 @@ object DataModule1: TDataModule1
       'AutoEncodeStrings='
     )
     Connected = True
+    HostName = 'localhost'
     Port = 0
-    Database = '/home/xcall/confident/versao 0.0.1/confident.db'
-    Protocol = 'sqlite-3'
+    Database = 'confident'
+    User = 'postgres'
+    Password = '1324'
+    Protocol = 'postgresql'
     left = 272
     top = 8
   end
@@ -35,16 +38,14 @@ object DataModule1: TDataModule1
       'WHERE usuarios.id_cadastro_usuario = :OLD_id_cadastro_usuario'
     )
     InsertSQL.Strings = (
-      'INSERT INTO usuarios(id_cadastro_usuario, nome_usuario, senha_usuario, curso_usuario, id_escola)'
-      'VALUES (:id_cadastro_usuario, :nome_usuario, :senha_usuario, :curso_usuario, :id_escola)'
+      'INSERT INTO usuarios(id_cadastro_usuario, nome_usuario, senha_usuario)'
+      'VALUES (:id_cadastro_usuario, :nome_usuario, :senha_usuario)'
     )
     ModifySQL.Strings = (
       'UPDATE usuarios SET'
       'id_cadastro_usuario = :id_cadastro_usuario,'
       'nome_usuario = :nome_usuario,'
       'senha_usuario = :senha_usuario,'
-      'curso_usuario = :curso_usuario,'
-      'id_escola = :id_escola'
       'WHERE usuarios.id_cadastro_usuario = :OLD_id_cadastro_usuario'
     )
     UseSequenceFieldForRefreshSQL = False
@@ -68,16 +69,6 @@ object DataModule1: TDataModule1
       end    
       item
         DataType = ftUnknown
-        Name = 'curso_usuario'
-        ParamType = ptUnknown
-      end    
-      item
-        DataType = ftUnknown
-        Name = 'id_escola'
-        ParamType = ptUnknown
-      end    
-      item
-        DataType = ftUnknown
         Name = 'OLD_id_cadastro_usuario'
         ParamType = ptUnknown
       end>
@@ -85,7 +76,7 @@ object DataModule1: TDataModule1
   object ZTableCadUsuario: TZTable
     Connection = ZConConfident
     Active = True
-    TableName = 'usuarios'
+    TableName = 'public.usuarios'
     left = 48
     top = 184
   end
@@ -198,7 +189,7 @@ object DataModule1: TDataModule1
       'WHERE tp_denuncia.id_tp_denuncia = :OLD_id_tp_denuncia'
     )
     UseSequenceFieldForRefreshSQL = False
-    left = 304
+    left = 328
     top = 72
     ParamData = <    
       item
@@ -221,7 +212,7 @@ object DataModule1: TDataModule1
     Connection = ZConConfident
     Active = True
     TableName = 'tp_denuncia'
-    left = 304
+    left = 328
     top = 184
   end
   object ZQueryTpDenuncia: TZQuery
@@ -232,18 +223,106 @@ object DataModule1: TDataModule1
       'SELECT * FROM tp_denuncia'
     )
     Params = <>
-    left = 304
+    left = 328
     top = 128
   end
   object SourceTableTpDenuncia: TDataSource
     DataSet = ZTableTpDenuncia
-    left = 304
+    left = 328
     top = 240
   end
   object SourceTpDenuncia: TDataSource
     AutoEdit = False
     DataSet = ZQueryTpDenuncia
-    left = 304
+    left = 328
+    top = 296
+  end
+  object ZUpdateEscola: TZUpdateSQL
+    DeleteSQL.Strings = (
+      'DELETE FROM escola'
+      'WHERE escola.id_escola = :OLD_id_escola'
+    )
+    InsertSQL.Strings = (
+      'INSERT INTO escola(id_escola, nome_escola, cidade_escola, cep, rua, uf)'
+      'VALUES (:id_escola, :nome_escola, :cidade_escola, :cep, :rua, :uf)'
+    )
+    ModifySQL.Strings = (
+      'UPDATE tp_denuncia SET'
+      'id_escola = :id_escola,'
+      'nome_escola = :nome_escola,'
+      'cidade_escola = :cidade_escola,'
+      'cep = :cep,'
+      'rua = :rua,'
+      'uf = :uf'
+      'WHERE escola.id_escola = :OLD_id_escola'
+    )
+    UseSequenceFieldForRefreshSQL = False
+    left = 456
+    top = 72
+    ParamData = <    
+      item
+        DataType = ftUnknown
+        Name = 'id_escola'
+        ParamType = ptUnknown
+      end    
+      item
+        DataType = ftUnknown
+        Name = 'nome_escola'
+        ParamType = ptUnknown
+      end    
+      item
+        DataType = ftUnknown
+        Name = 'cidade_escola'
+        ParamType = ptUnknown
+      end    
+      item
+        DataType = ftUnknown
+        Name = 'cep'
+        ParamType = ptUnknown
+      end    
+      item
+        DataType = ftUnknown
+        Name = 'rua'
+        ParamType = ptUnknown
+      end    
+      item
+        DataType = ftUnknown
+        Name = 'uf'
+        ParamType = ptUnknown
+      end    
+      item
+        DataType = ftUnknown
+        Name = 'OLD_id_escola'
+        ParamType = ptUnknown
+      end>
+  end
+  object ZQueryEscola: TZQuery
+    Connection = ZConConfident
+    UpdateObject = ZUpdateEscola
+    Active = True
+    SQL.Strings = (
+      'SELECT * FROM escola'
+    )
+    Params = <>
+    left = 456
+    top = 128
+  end
+  object ZTableEscola: TZTable
+    Connection = ZConConfident
+    Active = True
+    TableName = 'public.escola'
+    left = 456
+    top = 184
+  end
+  object SourceTableEscola: TDataSource
+    DataSet = ZTableEscola
+    left = 456
+    top = 240
+  end
+  object SourceEscola: TDataSource
+    AutoEdit = False
+    DataSet = ZQueryEscola
+    left = 456
     top = 296
   end
 end

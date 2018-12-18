@@ -1,10 +1,18 @@
 object FormNotProblemas: TFormNotProblemas
   Left = 0
-  Height = 240
+  Height = 374
   Top = 0
-  Width = 320
+  Width = 849
   Caption = 'Notificação de Problemas'
-  ClientHeight = 240
-  ClientWidth = 320
+  ClientHeight = 374
+  ClientWidth = 849
+  Color = clFuchsia
   Visible = False
+  object DBGroupBox1: TDBGroupBox
+    Left = 8
+    Height = 361
+    Top = 8
+    Width = 833
+    TabOrder = 0
+  end
 end

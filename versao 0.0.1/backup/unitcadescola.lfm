@@ -1,11 +1,10 @@
-object Form2: TForm2
+object FormCadEscola: TFormCadEscola
   Left = 0
   Height = 240
   Top = 0
   Width = 320
-  Caption = 'Form2'
+  Caption = 'Cadastrar Nova Escola'
   ClientHeight = 240
   ClientWidth = 320
-  LCLVersion = '1.8.4.0'
   Visible = False
 end

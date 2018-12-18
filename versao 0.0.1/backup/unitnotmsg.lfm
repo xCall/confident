@@ -1,11 +1,10 @@
-object Form5: TForm5
+object FormNotMsg: TFormNotMsg
   Left = 0
   Height = 240
   Top = 0
   Width = 320
-  Caption = 'Form5'
+  Caption = 'Notificação de Mensagem'
   ClientHeight = 240
   ClientWidth = 320
-  LCLVersion = '1.8.4.0'
   Visible = False
 end

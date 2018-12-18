@@ -5,10 +5,15 @@ unit unitnotproblemas;
 interface
 
 uses
-  Classes, SysUtils, FileUtil, Forms, Controls, Graphics, Dialogs;
+  Classes, SysUtils, FileUtil, Forms, Controls, Graphics, Dialogs, DbCtrls,
+  DBGrids;
 
 type
+
+  { TFormNotProblemas }
+
   TFormNotProblemas = class(TForm)
+    DBGroupBox1: TDBGroupBox;
   private
 
   public
